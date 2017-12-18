@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a="1312.123asfdsa"
+		console.log(parseInt(a));
+		console.log(parseFloat(a));
+		var test = new Date();
+		var testStr1 = new String("5,000");
+		console.log(Number(testStr1));
+		console.log(Number(test)); 
+
+		var b=["a","b","c","d","e","f"];
+		console.log(b.pop());
+		console.log(b.push("j"));
+		console.log(b);
+		console.log(b.shift());
+		console.log(b.unshift());
+		function fun(n,o){
+			console.log(o)
+			return {
+				fun:function(m){
+					return fun(m,n);
+				}
+			};
+		}
+		var a=fun(0);  a.fun(1);  a.fun(2);  a.fun(3);
+		console.log(a);
+	</script>
+</body>
+</html>
